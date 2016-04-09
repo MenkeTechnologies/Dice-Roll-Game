@@ -9,6 +9,7 @@ import java.awt.event.ActionListener;
  */
 public class mp6 extends JFrame {
 
+    static final int NUMBER_DICE = 5;
     private JPanel playerPanel;
     private JPanel computerPanel;
     private JPanel buttonPanel;
@@ -18,15 +19,14 @@ public class mp6 extends JFrame {
     private JButton button;
 
 
-    JGraphicDie[] JplayerDice = new JGraphicDie[5];
-    JGraphicDie[] JcomputerDice = new JGraphicDie[5];
+    JGraphicDie[] JplayerDice = new JGraphicDie[NUMBER_DICE];
+    JGraphicDie[] JcomputerDice = new JGraphicDie[NUMBER_DICE];
 
     public mp6() {
         super("MP6");
         setLayout(new BorderLayout());
         setSize(600,500);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-
 
         JPanel biggerPanel = new JPanel();
         biggerPanel.setLayout(new GridLayout(3, 1));
@@ -37,7 +37,7 @@ public class mp6 extends JFrame {
         playerLabel = new JLabel("Player Dice");
 
         playerPanel.add(playerLabel);
-        playerPanel.setLayout(new GridLayout(1,6));
+        playerPanel.setLayout(new GridLayout(1,NUMBER_DICE+1));
 
         computerPanel = new JPanel();
 
@@ -45,7 +45,7 @@ public class mp6 extends JFrame {
         computerLabel = new JLabel("Computer Dice");
 
         computerPanel.add(computerLabel);
-        computerPanel.setLayout(new GridLayout(1,6));
+        computerPanel.setLayout(new GridLayout(1,NUMBER_DICE+1));
 
 
         buttonPanel = new JPanel();

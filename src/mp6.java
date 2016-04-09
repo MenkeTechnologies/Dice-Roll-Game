@@ -9,7 +9,9 @@ import java.awt.event.ActionListener;
  */
 public class mp6 extends JFrame {
 
+    //change number of dice
     static final int NUMBER_DICE = 5;
+
     private JPanel playerPanel;
     private JPanel computerPanel;
     private JPanel buttonPanel;

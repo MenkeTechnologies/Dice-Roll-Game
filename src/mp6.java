@@ -10,7 +10,7 @@ import java.awt.event.ActionListener;
 public class mp6 extends JFrame {
 
     //change number of dice
-    static final int NUMBER_DICE = 5;
+    static final int NUMBER_DICE = 10;
 
     private JPanel playerPanel;
     private JPanel computerPanel;
@@ -27,7 +27,7 @@ public class mp6 extends JFrame {
     public mp6() {
         super("MP6");
         setLayout(new BorderLayout());
-        setSize(600,NUMBER_DICE*100); //to maintain minimum spacing
+        setSize(NUMBER_DICE*100,500); //to maintain minimum spacing
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         JPanel biggerPanel = new JPanel();

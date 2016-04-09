@@ -27,7 +27,7 @@ public class mp6 extends JFrame {
     public mp6() {
         super("MP6");
         setLayout(new BorderLayout());
-        setSize(600,500);
+        setSize(600,NUMBER_DICE*100);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         JPanel biggerPanel = new JPanel();

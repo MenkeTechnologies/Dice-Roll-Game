@@ -27,7 +27,7 @@ public class mp6 extends JFrame {
     public mp6() {
         super("MP6");
         setLayout(new BorderLayout());
-        setSize(NUMBER_DICE*100,500); //to maintain minimum spacing
+        setSize(NUMBER_DICE*120,500); //to maintain minimum spacing
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         JPanel biggerPanel = new JPanel();
@@ -55,7 +55,8 @@ public class mp6 extends JFrame {
 
         outcomeLabel = new JLabel("Click the button to roll");
         JButton button = new JButton("ClickMe");
-        button.setBackground(Color.white);
+
+
 
         buttonPanel.setLayout(new GridLayout(2,1));
         buttonPanel.add(button);
@@ -129,7 +130,6 @@ public class mp6 extends JFrame {
 
             String buttonString = e.getActionCommand();
             if (buttonString.equals("ClickMe")){
-
 
 
                 for (int i = 0; i < JplayerDice.length; i++) {
